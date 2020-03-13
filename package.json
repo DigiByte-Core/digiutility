@@ -1,0 +1,26 @@
+{
+  "name": "digiutility",
+  "version": "0.0.1",
+  "description": "DigiAsset Utility Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose ./test",
+    "coverage": "jest --coverage --coverageDirectory=coverage/jest",
+    "docs": "jsdoc -r . -d docs -c jsdoc.conf README.md"
+  },
+  "repository": "https://github.com/Digibyte-Core/digiutility",
+  "author": "Gary Mckee <esot@digibyte.io>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {   
+    "bluebird": "^3.7.2",
+    "digibyte": "git://github.com/digicontributer/digibyte-js.git#27156cd1cb4430c4a4959f46e809629846694434",
+    "digibytejs-mnemonic": "^1.5.2",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "docdash": "^1.2.0",
+    "jest": "^25.1.0",
+    "jsdoc": "^3.6.3"
+  }
+}
