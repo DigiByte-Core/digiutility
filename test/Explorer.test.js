@@ -6,8 +6,8 @@ describe('Explorer', () => {
 
   describe('getBalance', () => {
     it('Should get an addresses balance', () => {
-      return Explorer.getBalance(ADDRESS).then(balance => {
-        expect(balance).toEqual(0);
+      return Explorer.getBalance(ADDRESS).then(addr => {
+        expect(addr.balance).toEqual('0');
       });
     });
   });

@@ -50,7 +50,7 @@ describe('Address', () => {
   describe('getSeedBalance', () => {
     it('Should get balances for a seed', () => {
       return Address.getSeedBalance(testSeed).then(balances => {
-        expect(typeof balances).toEqual('Array');
+        expect(typeof balances).toEqual('object');
       });
     });
   });
